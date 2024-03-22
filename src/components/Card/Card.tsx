@@ -1,3 +1,4 @@
+import Counter from "../Counter/Counter";
 import "./Card.scss";
 
 type CardProps = {
@@ -11,6 +12,7 @@ const Card = ({ name, role }: CardProps) => {
             <div className="card-container__content">
                 <h1 className="card-container__heading">{name}</h1>
                 <p className="card-container__role">{role}</p>
+                <Counter />
             </div>
         </div>
     );
