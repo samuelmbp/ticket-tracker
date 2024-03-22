@@ -10,8 +10,10 @@ const Card = ({ name, role }: CardProps) => {
     return (
         <div className="card-container">
             <div className="card-container__content">
-                <h1 className="card-container__heading">{name}</h1>
-                <p className="card-container__role">{role}</p>
+                <div>
+                    <h1 className="card-container__heading">{name}</h1>
+                    <p className="card-container__role">{role}</p>
+                </div>
                 <Counter />
             </div>
         </div>
