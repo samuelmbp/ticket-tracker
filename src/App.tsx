@@ -1,7 +1,8 @@
 import "./App.scss";
+import Employee from "./components/Employee/Employee";
 
 function App() {
-    return <h1>Hello, world.</h1>;
+    return <Employee />;
 }
 
 export default App;
