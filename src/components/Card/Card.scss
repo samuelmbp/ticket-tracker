@@ -1,0 +1,23 @@
+.card-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    &__content {
+        background-color: aliceblue;
+        width: 260px;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 8px;
+
+        .card-container__heading {
+            font-size: 20px;
+        }
+
+        .card-container__role {
+            font-size: 18px;
+        }
+    }
+}
