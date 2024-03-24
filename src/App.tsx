@@ -1,6 +1,6 @@
 import "./App.scss";
 import Employee from "./components/Employee/Employee";
-import team from "./data/teamData";
+import { team } from "./data/teamData";
 
 function App() {
     return (
