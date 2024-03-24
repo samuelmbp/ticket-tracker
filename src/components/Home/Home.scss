@@ -2,7 +2,7 @@
     .home-heading {
         text-align: center;
         margin: 20px auto;
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .home-container {
@@ -13,10 +13,12 @@
         gap: 20px;
 
         .home__employee-name {
+            text-align: center;
             background-color: lightcoral;
             padding: 20px;
             width: 250px;
             color: white;
+            font-size: 16px;
         }
     }
 }

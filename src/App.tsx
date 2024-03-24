@@ -1,15 +1,17 @@
 import "./App.scss";
 import Home from "./components/Home/Home";
-// import Employee from "./components/Employee/Employee";
+import Nav from "./components/Nav/Nav";
 import { team } from "./data/teamData";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
     return (
-        <>
-            <h3 className="logo">Ticket Tracker</h3>
-            {/* <Employee team={team} /> */}
-            <Home team={team} />
-        </>
+        <BrowserRouter>
+            <Nav />
+            <Routes>
+                <Route path="/" element={<Home team={team} />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 

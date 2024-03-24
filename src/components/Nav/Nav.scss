@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    &__logo {
+        font-size: 14px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #1b1b1b;
+    }
+
+    // TODO: Add links hover effect
+}
