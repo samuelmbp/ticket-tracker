@@ -1,0 +1,22 @@
+.home-section {
+    .home-heading {
+        text-align: center;
+        margin: 20px auto;
+        font-size: 28px;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .home__employee-name {
+            background-color: lightcoral;
+            padding: 20px;
+            width: 250px;
+            color: white;
+        }
+    }
+}

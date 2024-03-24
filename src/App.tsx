@@ -1,12 +1,14 @@
 import "./App.scss";
-import Employee from "./components/Employee/Employee";
+import Home from "./components/Home/Home";
+// import Employee from "./components/Employee/Employee";
 import { team } from "./data/teamData";
 
 function App() {
     return (
         <>
-            <h1 className="logo">Ticket Tracker</h1>
-            <Employee team={team} />
+            <h3 className="logo">Ticket Tracker</h3>
+            {/* <Employee team={team} /> */}
+            <Home team={team} />
         </>
     );
 }
