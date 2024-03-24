@@ -17,7 +17,7 @@ const Profile = ({ team }: ProfileProps) => {
 
     return (
         <>
-            <h1 className="profile-heading">Profile Information</h1>
+            <h1 className="profile-heading">Profile</h1>
             <div className="profile-card">
                 <img
                     src={member.profile.profilePicture}

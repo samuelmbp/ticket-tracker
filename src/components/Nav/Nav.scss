@@ -22,3 +22,12 @@
 
     // TODO: Add links hover effect
 }
+
+@media screen and (min-width: 768px) {
+    .nav {
+        padding: 45px;
+        &__logo {
+            font-size: 18px;
+        }
+    }
+}

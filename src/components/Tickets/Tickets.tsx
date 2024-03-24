@@ -9,19 +9,27 @@ type TicketsProps = {
 
 const Tickets = ({ team }: TicketsProps) => {
     return (
-        <div className="tickets">
-            {team.map((member) => (
-                <div className="tickets__content" key={member.id}>
-                    <div>
-                        <Link to={`/profile/${member.id}`}>
-                            <h1 className="ticket__heading">{member.name}</h1>
-                            <p className="ticket__role">{member.role}</p>
-                        </Link>
+        <>
+            <h1 className="tickets-heading">Tickets</h1>
+            <div className="tickets">
+                {team.map((member) => (
+                    <div className="tickets__content" key={member.id}>
+                        <div>
+                            <Link
+                                to={`/profile/${member.id}`}
+                                className="tickets__link"
+                            >
+                                <h1 className="ticket__heading">
+                                    {member.name}
+                                </h1>
+                                <p className="ticket__role">{member.role}</p>
+                            </Link>
+                        </div>
+                        <Counter />
                     </div>
-                    <Counter />
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
+        </>
     );
 };
 

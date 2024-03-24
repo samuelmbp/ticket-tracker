@@ -8,11 +8,15 @@ type HomeProps = {
 
 const Home = ({ team }: HomeProps) => {
     return (
-        <section className="home-section">
-            <h1 className="home-heading">Ticket T. Employees</h1>
-            <div className="home-container">
+        <section className="home">
+            <h1 className="home__heading">Employees</h1>
+            <div className="home__container">
                 {team.map((member) => (
-                    <Link to={`/profile/${member.id}`} key={member.id}>
+                    <Link
+                        to={`/profile/${member.id}`}
+                        key={member.id}
+                        className="home__link"
+                    >
                         <h3 className="home__employee-name">{member.name}</h3>
                     </Link>
                 ))}
