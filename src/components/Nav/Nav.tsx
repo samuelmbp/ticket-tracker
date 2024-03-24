@@ -12,7 +12,7 @@ const Nav = () => {
                     </Link>
                 </li>
                 <li className="nav__item">
-                    <Link to="#" className="nav__link">
+                    <Link to="/tickets" className="nav__link">
                         Tickets
                     </Link>
                 </li>
