@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Team } from "../../types/team";
 import "./Home.scss";
 
@@ -10,11 +11,10 @@ const Home = ({ team }: HomeProps) => {
         <section className="home-section">
             <h1 className="home-heading">Ticket T. Employees</h1>
             <div className="home-container">
-                {team.map((employee) => (
-                    // TODO: Add a router link to employee profile(by id)
-                    <h3 key={employee.id} className="home__employee-name">
-                        {employee.name}
-                    </h3>
+                {team.map((member) => (
+                    <Link to={`/profile/${member.id}`} key={member.id}>
+                        <h3 className="home__employee-name">{member.name}</h3>
+                    </Link>
                 ))}
             </div>
         </section>
