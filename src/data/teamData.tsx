@@ -21,7 +21,8 @@ export const team: Team[] = [
             experience: "1 year",
             department: "Engineering",
             techstack: ["Python", "Django", "HTML/CSS"],
-            profilePicture: "https://via.placeholder.com/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Evelyn+Rodgers&size=250",
         },
     },
     {
@@ -56,7 +57,8 @@ export const team: Team[] = [
             experience: "2 years",
             department: "Engineering",
             techstack: ["Ruby", "Ruby on Rails", "PostgreSQL"],
-            profilePicture: "https://www.fillmurray.com/250/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Effie+Mohamed&size=250",
         },
     },
     {
@@ -67,7 +69,8 @@ export const team: Team[] = [
             experience: "5 years",
             department: "Engineering",
             techstack: ["Java", "Spring Boot", "React", "MongoDB"],
-            profilePicture: "https://placekitten.com/250/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Karam+Lees&size=250",
         },
     },
     {
@@ -78,7 +81,8 @@ export const team: Team[] = [
             experience: "7 years",
             department: "Management",
             techstack: ["Project Management Tools", "Communication Platforms"],
-            profilePicture: "https://placebear.com/250/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Eleanor+Dowling&size=250",
         },
     },
     {
@@ -89,7 +93,8 @@ export const team: Team[] = [
             experience: "2 years",
             department: "Quality Assurance",
             techstack: ["Testing Frameworks", "Bug Tracking Tools"],
-            profilePicture: "https://wwww.placecage.com/250/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Haris+Grey&size=250",
         },
     },
     {
@@ -100,7 +105,8 @@ export const team: Team[] = [
             experience: "3 years",
             department: "Quality Assurance",
             techstack: ["Automation Testing", "Selenium", "JIRA"],
-            profilePicture: "https://placebear.com/250/250",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Sohaib+Farley&size=250",
         },
     },
     {
@@ -111,7 +117,8 @@ export const team: Team[] = [
             experience: "10 years",
             department: "Miscellaneous",
             techstack: ["Strength and Endurance", "Intimidation"],
-            profilePicture: "https://placebeard.it/250/250g",
+            profilePicture:
+                "https://eu.ui-avatars.com/api/?name=Phillip+Mitchell&size=250",
         },
     },
 ];
