@@ -1,6 +1,7 @@
 import "./Profile.scss";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Team } from "../../types/team";
+import Button from "../Button/Button";
 
 type ProfileProps = {
     team: Team[];
@@ -43,6 +44,9 @@ const Profile = ({ team }: ProfileProps) => {
                             {member.profile.techstack.join(", ")}
                         </p>
                     </div>
+                    <Link to="/tickets">
+                        <Button label="Go Back to Tickets" variant="primary" />
+                    </Link>
                 </div>
             </div>
         </>
