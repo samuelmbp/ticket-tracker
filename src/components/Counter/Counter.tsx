@@ -4,13 +4,8 @@ import "./Counter.scss";
 const Counter = () => {
     const [count, setCount] = useState<number>(0);
 
-    const handleIncrement = () => {
-        setCount(count + 1);
-    };
-
-    const handleDecrement = () => {
-        count === 0 ? setCount(0) : setCount(count - 1);
-    };
+    const handleIncrement = () => setCount(count + 1);
+    const handleDecrement = () => count === 0 ? setCount(0) : setCount(count - 1);
 
     return (
         <div className="counter-container">

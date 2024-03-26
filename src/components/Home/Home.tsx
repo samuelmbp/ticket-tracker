@@ -9,7 +9,7 @@ type HomeProps = {
 const Home = ({ team }: HomeProps) => {
     return (
         <section className="home">
-            <h1 className="home__heading">Employees</h1>
+            <h1 className="home__heading"> Employees</h1>
             <div className="home__container">
                 {team.map((member) => (
                     <Link

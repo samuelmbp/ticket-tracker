@@ -1,18 +1,36 @@
-import "./Tickets.scss";
+import { FormEvent, useState } from "react";
+import { Link } from "react-router-dom";
 import { Team } from "../../types/team";
 import Counter from "../Counter/Counter";
-import { Link } from "react-router-dom";
+import SearchBox from "../SearchBox/SearchBox";
+import "./Tickets.scss";
 
 type TicketsProps = {
     team: Team[];
 };
 
 const Tickets = ({ team }: TicketsProps) => {
+    const [searchTerm, setSearchTerm] = useState<string>("");
+
+    const handleInput = (event: FormEvent<HTMLInputElement>) => {
+        const input = event.currentTarget.value.toLowerCase();
+        setSearchTerm(input);
+    };
+
+    const filteredTickets = team.filter((employee) => {
+        return employee.name.toLowerCase().includes(searchTerm);
+    });
+
     return (
         <>
             <h1 className="tickets-heading">Tickets</h1>
+            <SearchBox
+                label="Search by Name"
+                searchTerm={searchTerm}
+                handleInput={handleInput}
+            />
             <div className="tickets">
-                {team.map((member) => (
+                {filteredTickets.map((member) => (
                     <div className="tickets__content" key={member.id}>
                         <div>
                             <Link

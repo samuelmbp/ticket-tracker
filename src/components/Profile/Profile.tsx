@@ -4,6 +4,7 @@ import { Team } from "../../types/team";
 
 type ProfileProps = {
     team: Team[];
+    // ADD ALL KEY VALUE PAIRS FOR TEAM DATA AND USE THEM AS PROPS.
 };
 const Profile = ({ team }: ProfileProps) => {
     const { id } = useParams<{ id: string }>();
@@ -11,6 +12,7 @@ const Profile = ({ team }: ProfileProps) => {
     if (!id) return;
 
     const memberId = parseInt(id);
+    // USE ARRAY DESTRUCTURING
     const member = team.find((member) => member.id === memberId);
 
     if (!member) return;
