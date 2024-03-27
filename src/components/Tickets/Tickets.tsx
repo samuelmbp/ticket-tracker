@@ -1,10 +1,10 @@
 import { FormEvent, useState } from "react";
-import { Link } from "react-router-dom";
 import { Team } from "../../types/team";
 import Counter from "../Counter/Counter";
 import SearchBox from "../SearchBox/SearchBox";
 import "./Tickets.scss";
 import Dropdown from "../Dropdown/Dropdown";
+import TicketCard from "../TicketCard/TicketCard";
 
 type TicketsProps = {
     team: Team[];
@@ -65,17 +65,11 @@ const Tickets = ({ team }: TicketsProps) => {
             <div className="tickets">
                 {filteredTickets.map((member) => (
                     <div className="tickets__content" key={member.id}>
-                        <div>
-                            <Link
-                                to={`/profile/${member.id}`}
-                                className="tickets__link"
-                            >
-                                <h1 className="ticket__heading">
-                                    {member.name}
-                                </h1>
-                                <p className="ticket__role">{member.role}</p>
-                            </Link>
-                        </div>
+                        <TicketCard
+                            id={member.id}
+                            name={member.name}
+                            role={member.role}
+                        />
                         <Counter />
                     </div>
                 ))}

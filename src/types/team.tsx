@@ -1,7 +1,7 @@
 export type Team = {
     id: number;
     name: string;
-    role?: string;
+    role: string;
     profile: {
         experience: string;
         department: string;

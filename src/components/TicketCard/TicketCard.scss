@@ -1,0 +1,16 @@
+@use "../../assets/styles/variables" as *;
+
+.ticket {
+    .ticket__link {
+        text-decoration: none;
+        color: $color-black;
+    }
+
+    .ticket__heading {
+        font-size: 18px;
+    }
+
+    .ticket__role {
+        margin: 4px 0px;
+    }
+}
