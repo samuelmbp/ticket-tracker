@@ -7,35 +7,40 @@
     padding: 30px;
 
     &__logo {
-        font-size: 14px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
         text-decoration: none;
         cursor: pointer;
 
         &-text {
-            color: #1b1b1b;
+            color: $color-primary;
+        }
+        &-icon {
+            width: 40px;
         }
     }
 
     &__items {
         display: flex;
-        gap: 15px;
         list-style: none;
     }
 
     &__link {
         text-decoration: none;
-        color: #1b1b1b;
+        color: $color-primary;
         cursor: pointer;
         transition: background-color 0.3s ease;
         border-radius: 10px;
-        padding: 6px 12px;
+        padding: 6px 6px;
+        font-size: 14px;
     }
 
     &__link:hover {
         background-color: $color-secondary;
     }
-
-    // TODO: Add links hover effect
 }
 
 @media screen and (min-width: 768px) {
@@ -47,6 +52,7 @@
         }
         &__link {
             font-size: 18px;
+            padding: 6px 12px;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use "../../assets/styles/variables" as *;
+
 .home {
     &__heading {
         text-align: center;
@@ -20,15 +22,22 @@
         .home__employee-name {
             border-radius: 12px;
             padding: 25px;
-            // border: 1px solid #ffc600;
-            border: 1px solid #1b1a55;
+            border: 3px solid $color-primary;
             text-align: center;
-            background-color: aliceblue;
+            background-color: $color-tertiary;
             width: 250px;
             font-size: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .home__employee-name:hover {
+            background-color: $color-primary;
+            border: 3px solid $color-secondary;
+            transform: translate(5px, -5px);
+            color: $color-white;
         }
     }
 }
@@ -46,6 +55,7 @@
 
         .home__employee-name {
             background-color: aliceblue;
+            width: 350px;
         }
     }
 }
@@ -53,7 +63,7 @@
 @media screen and (min-width: 1024px) {
     .home {
         .home__employee-name {
-            height: 120px;
+            width: 450px;
         }
     }
 }
