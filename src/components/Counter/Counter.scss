@@ -1,11 +1,12 @@
+@use "../../assets/styles/variables" as *;
+
 .counter-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    // border: 2px solid #ffc600;
-    border: 2px solid #1b1a55;
+    border: 2px solid $color-primary;
     padding: 10px;
 
     &__count {
@@ -22,8 +23,8 @@
             border: none;
             padding: 4px;
             width: 20px;
-            color: white;
-            background-color: #1b1a55;
+            color: $color-white;
+            background-color: $color-primary;
             border-radius: 6px;
             cursor: pointer;
         }

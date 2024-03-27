@@ -16,7 +16,7 @@
 
         .home__link {
             text-decoration: none;
-            color: black;
+            color: $color-black;
         }
 
         .home__employee-name {
@@ -54,7 +54,7 @@
         }
 
         .home__employee-name {
-            background-color: aliceblue;
+            background-color: $color-tertiary;
             width: 350px;
         }
     }

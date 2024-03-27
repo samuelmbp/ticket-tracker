@@ -28,7 +28,7 @@ const Tickets = ({ team }: TicketsProps) => {
         if (searchTerm && selectedDropdown) {
             return (
                 employee.name.toLowerCase().includes(searchTerm) &&
-                employee.role?.toLowerCase().includes(selectedDropdown)
+                employee.role.toLowerCase().includes(selectedDropdown)
             );
         } else if (searchTerm) {
             return employee.name.toLowerCase().includes(searchTerm);
